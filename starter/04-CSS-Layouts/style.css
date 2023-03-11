@@ -2,6 +2,7 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -14,7 +15,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -50,8 +51,8 @@ aside {
   border-bottom: 5px solid #1098ad;
   /* padding-top: 50px;
   padding-bottom: 50px; */
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
+  /* width: 500px; */
 }
 
 /* SMALLER ELEMENTS */
@@ -134,11 +135,12 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
-body {
-  /* background-color: orangered; */
-}
+/* body {
+  background-color: orangered;
+} */
 
 /* .first-li {
   font-weight: bold;
@@ -152,9 +154,9 @@ li:last-child {
   font-style: italic;
 }
 
-li:nth-child(even) {
-  /* color: red; */
-}
+/* li:nth-child(even) {
+  color: red;
+} */
 
 /* Misconception: this won't work! */
 article p:first-child {
@@ -265,3 +267,50 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* FLOATS */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+/* .clear {
+  clear: both;
+} */
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  /* background-color: #008000; */
+  width: 825px;
+  float: left;
+}
+
+aside {
+  /* background-color: red; */
+  width: 300px;
+  float: right;
+}
+
+footer {
+  /* background-color: yellow; */
+  clear: both;
+}
