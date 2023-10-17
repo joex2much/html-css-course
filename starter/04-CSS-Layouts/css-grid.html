@@ -8,6 +8,8 @@
     <style>
       .el--1 {
         background-color: blueviolet;
+        /* grid-column: 1 / -2; */
+        /* grid-row: 2; */
       }
       .el--2 {
         background-color: orangered;
@@ -15,6 +17,8 @@
       .el--3 {
         background-color: green;
         height: 150px;
+        justify-self: end;
+        align-self: end;
       }
       .el--4 {
         background-color: goldenrod;
@@ -30,6 +34,8 @@
       }
       .el--8 {
         background-color: crimson;
+        /* grid-column: 2/3; */
+        /* grid-row: 1/2; */
       }
 
       .container--1 {
@@ -40,10 +46,24 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr auto; */
+        /* grid-template-rows: 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        height: 500px;
+
+        /* gap: 30px; */
+        column-gap: 10px;
+        row-gap: 40px;
+
+        display: none;
       }
 
       .container--2 {
+        /* display: none; */
         /* STARTER */
+
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
@@ -53,6 +73,17 @@
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 200px 100px;
+
+        /* Aligning tracks inside container */
+        justify-content: center;
+        /* justify-content: space-between; */
+        align-content: center;
+
+        justify-items: center;
+        align-items: center;
       }
     </style>
   </head>
@@ -64,7 +95,7 @@
       <div class="el el--4">(4) are</div>
       <div class="el el--5">(5) amazing</div>
       <div class="el el--6">(6) languages</div>
-      <div class="el el--7">(7) to</div>
+      <!-- <div class="el el--7">(7) to</div> -->
       <div class="el el--8">(8) learn</div>
     </div>
 
