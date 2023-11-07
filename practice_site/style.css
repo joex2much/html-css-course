@@ -7,34 +7,38 @@
 
 /* component styling */
 body {
+  min-height: 100vh;
   display: flex;
   margin: 0px;
   justify-content: center;
+  align-items: center;
   background-image: url(https://images.unsplash.com/photo-1600512592336-7e1452b9743c?auto=format&fit=crop&q=80&w=2942&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
 }
 
 h2 {
   font-weight: 800;
   margin: 0px;
+  font-size: 23.44px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 12px;
 }
 /* class styling */
 .standard-bg {
   background-color: #f9dfd0;
   border-radius: 8px;
-  padding: 64px;
+  padding: 32px;
 }
 
 .standard-input {
-  width: 336px;
+  /* width: 336px; */
   padding: 8px;
   margin: 16px 0px;
-  font-size: 16px;
+  font-size: 12px;
   border: none;
   border-radius: 8px;
 }
@@ -43,11 +47,12 @@ p {
 .standard-button:hover {
   padding: 8px 24px;
   margin: 16px 0px;
-  font-size: 16px;
+  font-size: 12px;
   color: #eae9ec;
   border: none;
   border-radius: 16px;
   background-color: #292540;
+  align-self: flex-start;
 }
 
 .standard-button:hover {
@@ -64,11 +69,12 @@ p {
 
 /* id styling */
 #login {
+  max-width: 320px;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  margin: 64px 0px;
-  word-wrap: break-word;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  margin: 32px 32px;
   /* height: 576px; */
   /* width: 576px; */
 }
