@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #181818;
+}
+
+/* component styling */
+body {
+  display: flex;
+  margin: 0px;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1600512592336-7e1452b9743c?auto=format&fit=crop&q=80&w=2942&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h2 {
+  font-weight: 800;
+  margin: 0px;
+}
+
+p {
+  font-size: 16px;
+}
+/* class styling */
+.standard-bg {
+  background-color: #f9dfd0;
+  border-radius: 8px;
+  padding: 64px;
+}
+
+.standard-input {
+  width: 336px;
+  padding: 8px;
+  margin: 16px 0px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+.standard-button,
+.standard-button:hover {
+  padding: 8px 24px;
+  margin: 16px 0px;
+  font-size: 16px;
+  color: #eae9ec;
+  border: none;
+  border-radius: 16px;
+  background-color: #292540;
+}
+
+.standard-button:hover {
+  background-color: #3e3b53;
+}
+
+.standard-button:active {
+  background-color: #545166;
+}
+
+.standard-button:disabled {
+  background-color: #9492a0;
+}
+
+/* id styling */
+#login {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 64px 0px;
+  word-wrap: break-word;
+  /* height: 576px; */
+  /* width: 576px; */
+}
